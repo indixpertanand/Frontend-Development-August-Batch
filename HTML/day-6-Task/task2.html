@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Email Template</h1>
+    </header>
+    <main>
+        <!-- First Way -->
+        <table  style="text-align: center; width: 400px" border>
+            <!-- <thead> -->
+                <tr>
+                    <th rowspan="5">Creative<br/> Vector Image</th>
+                    <th colspan="6">Company Logo</th>
+                </tr>
+            <!-- </thead>
+            <tbody> -->
+                <tr>
+                    <td colspan="6">Email Body</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Image</td>
+                    <td colspan="3">Image</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Image One</td>
+                    <td colspan="2">Image</td>
+                    <td colspan="2">Image</td>
+                </tr>
+            <!-- </tbody>
+            <tfoot> -->
+                <td colspan="6">Footer</td>
+            <!-- </tfoot> -->
+        </table>
+<br>
+        <!-- Second Way - Nested Tables -->
+        <table  style="text-align: center; width: 400px" border>
+            <tr>
+                <th rowspan="5">Creative<br/> Vector Image</th>
+                <th colspan="2">Company Logo</th>
+            </tr>
+            <tr>
+                <td colspan="2">Email Body</td>
+            </tr>
+            <tr>
+                <td>Image</td>
+                <td>Image</td>
+            </tr>
+            <tr>
+                <td colspan="2" style="height: 20px;">
+                    <table border style="width: 100%">
+                        <tr>
+                            <td>Image one</td>
+                            <td>Image</td>
+                            <td>Image</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">Footer</td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>
