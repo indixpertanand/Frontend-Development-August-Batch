@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #hero-banner {
+            background-color: #333;
+            color: #fff;
+        }
+        .section{
+            padding: 20px;
+        }
+        .text-red{
+            color: red;
+        }
+    </style>
+   
+</head>
+<body>
+    <!-- ID -->
+    <section id="hero-banner" class="section ">
+        Section 1
+    </section>
+    <!-- Classes -->
+    <section class="section" dir="rtl">
+        اربك تكست هو اول موقع يسمح لزواره الكرام بتحويل الكتابة العربي الى كتابة مفهومة من قبل اغلب برامج التصميم مثل الفوتوشوب و الافترايفكتس و البريمير و الافد ميدا كومبوزر و السموك و برامج اخرى كثيرة
+    </section>
+    <section  class="section text-red" style="color: green;">
+        Section 3
+        <!-- Tab Index -->
+        <button tabindex="3">Button 2</button>
+        <a tabindex="1" href="//google.com" title="Click here to visit google">Google</a>
+    </section>
+    <section hidden>
+        not relevent
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sequi labore vel consequatur assumenda. Libero vitae non mollitia, ex delectus exercitationem nostrum deleniti, modi saepe corporis asperiores assumenda et nihil odit, aspernatur nam ducimus? Ullam officia dolorem fugit, perferendis atque officiis doloremque minima vel vero rerum nemo ipsa necessitatibus suscipit?
+    </section>
+<!-- Data Attribute --> 
+    <button tabindex="2" data-max="100">Button 1</button>
+    
+    <!-- Contenteditable -->
+    <section class="section" contenteditable="true">
+        Section 4
+
+        <!-- Traggable -->
+    </section>
+    <button draggable="true">Button 5</button>
+
+    <section dropzone="move">
+        section 5
+    </section>
+
+    <script>
+       console.log(document.getElementsByClassName('section'));
+       console.log(document.getElementById('hero-banner'));
+       console.log(document.getElementsByTagName('button')[0].dataset.max);
+    </script>
+</body>
+</html>
