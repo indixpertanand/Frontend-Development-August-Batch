@@ -1,0 +1,67 @@
+p{
+    /* Named Color */
+    color: blue
+}
+
+h1{
+    /* Hex color */
+    color: #f00;
+}
+
+h2{
+    /* RGB */
+    color: rgb(6 156 114);
+}
+
+.hsl-color{
+    color: hsl(240, 100%, 50%);
+}
+
+/* Color Transparancy */
+
+/* #rgba ->   where a ranges from 0 fully opec and f means fully visible*/
+/* rgba()  -> a 0 fully opec to 1 no opec */
+.color-transparent{    
+    color: #f008; /* hex code */
+    color: rgba(255, 0, 0, .5); /* rgb code */
+    color: hsla(0, 100%, 50%, .5); /* hsl code */
+}
+
+
+.box{
+    height: 100vh;
+    background-color: rgba(255, 0, 0, .5);
+    background-image: url('https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg');
+    /* background: url('../images/pattern.png'); */
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.box-2{
+    height: 150vh;
+    /* Linear Gradient */
+    background-image: linear-gradient(to right, red , blue, green ); 
+    /* Radial Gradient */
+    /* background-image: radial-gradient(circle at bottom, red, green); */
+    /* Conic Gradient */
+    /* background: conic-gradient(red 20%, orange 20% 40%, yellow 40% 60%, green 60% 80%, blue 80% 100%); */
+}
+/* .box p{
+    color: white;
+} */
+
+.box-3{
+    background-image: url('https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg');
+    background-size: cover; 
+    background-attachment: fixed;
+    text-align: center;
+    background-clip: text;
+}
+
+.box-3 h2{
+    color: transparent;
+    font-weight: 900;
+    font-size: 5rem;
+}

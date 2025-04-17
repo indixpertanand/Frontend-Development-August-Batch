@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+p{
+    color: gray;
+    margin-bottom: 20px;
+}
+
+
+#special-para{
+    color: red;
+}
+
+.heading{
+    color: brown;
+}
+.sec-heading{
+    color: blue;
+}
+
+p, li, .text-20{
+    font-size: 20px;
+}
+
+input{
+    width: 400px;
+}
+input[type="submit"]{
+    width: auto;
+}
+
+input[readonly]{
+    background-color: lightgray;
+    opacity: .5;
+}
+
+main p{
+    color: chartreuse;
+}
+main > p{
+    color: purple;
+}
+
+h2 + p{
+    color: dodgerblue;
+}
+h2 ~ p{
+    color: red;
+}
+
+/* this is a comment in css */
+
+/* this
+is 
+a
+multiline 
+comment */
+
+/* section{
+    border-top: 1px solid #000;
+} */
