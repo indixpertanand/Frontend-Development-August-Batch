@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font, Text Styles & Pseudo Classes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: "Work Sans", sans-serif
+        }
+        h1{
+            font-size: 48px;
+            font-weight: 900;
+            line-height: 1.1;
+        }
+        p{
+            font-family: 'Inter', "Work Sans", sans-serif;
+            font-size: 18px;
+            line-height: 1.4;
+            text-align: justify;
+
+        }
+        span{
+            font-style:italic;
+        }
+
+        h2{
+            font:small-caps 500 2rem/1.5 "Inter";
+            text-decoration:none;
+            text-decoration-style: double;
+
+        }
+
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color: red;
+        }
+        a:focus{
+            color: green;
+        }
+        a:active, button:active{
+            color: pink;
+        }
+        h3{
+            text-transform:uppercase;
+            word-spacing: 10px;
+        }
+        .letter-spacing{
+            letter-spacing: -5px;
+            font-size: 30px;
+            font-style: normal;
+            word-spacing: 10px;
+        }
+        div{
+            width: 100px;
+            white-space: nowrap;
+        }
+        .ws-nowrap{
+            white-space: nowrap;
+        }
+        section{
+            text-shadow: 4px 4px 4px red;
+            font-size: 40px;
+        }
+        li:first-child{
+            color: red;
+        }
+        /* li:last-child{
+            color: green;
+        } */
+        li:nth-child(-n + 1){
+            color: green;
+        }
+        input:invalid{
+            border-color: red;
+        }
+        input:valid{
+            border-color: green;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>30 Yeprs Experience</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quisquam necessitatibus quis, numquam aspernatur nesciunt officia <span>expedita sapiente</span> <span class="ws-nowrap">vero architecto?</span></p>
+        <span>h<sub>2</sub>o</span>
+
+        <h2>Heading 2</h2>
+        <a href="#">Link</a>
+        <h3>CSS fONT, text-style, pseudo classes</h3>
+        <div class="letter-spacing">Letter Spacing</div>
+
+        <section>
+            Text-Shadow
+        </section>
+        <button>Button</button>
+        <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, atque.</li>
+            <li>Incidunt sapiente ullam id in quas nulla odit quaerat non!</li>
+            <li>Unde harum sint perferendis ipsum dolores at provident eaque? Inventore.</li>
+            <li>Sint adipisci, id officiis dicta animi quod quae obcaecati iusto.</li>
+            <li>Odio placeat omnis magni nihil, praesentium quibusdam illum. Ipsum, sed!</li>
+        </ul>
+        <form action="">
+            <input type="text" minlength="10" required>
+        </form>
+    </main>
+</body>
+</html>
