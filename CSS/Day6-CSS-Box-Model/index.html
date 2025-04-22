@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        .box{
+            padding: 20px;
+            /* padding-right: 40px;
+            padding-left: 30px;
+            padding-top: 30px;
+            padding-bottom: 30px; */
+            border:  1px solid #000 ;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        section .box{
+            /* padding-top: 40px;
+            padding-bottom: 40px; */
+            padding-block: 40px;
+
+            border-color: #0f0;
+            border-style: double;
+            border-width: 10px;
+            margin: 40px 20px;
+            width: calc(100% - 40px);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="box">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam illo voluptatibus qui ipsum, consectetur ipsa beatae quis, numquam dolores quasi aliquam asperiores. Molestiae dolor neque tempore doloribus explicabo cupiditate cum?
+        </div>
+        <section>
+            <div class="box">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium in voluptas quidem tenetur ut, dolorem aliquam molestias tempore quo!
+            </div>
+        </section>
+    </main>
+</body>
+</html>
