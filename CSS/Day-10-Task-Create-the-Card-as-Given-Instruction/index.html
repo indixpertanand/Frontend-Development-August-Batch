@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Card Desing</title>
+        <style>
+            *{
+                margin: 0;
+                box-sizing: border-box;
+            }
+            .card{
+                max-width: 300px;
+                margin-inline: auto;
+                font-family: sans-serif;
+                margin-top: 30px;
+            }
+            .card-image{
+                max-width: 100%;
+                height: auto;
+            }
+            
+            .card:hover .details{
+                top: 0;
+            }
+            .image-wrapper{
+                position: relative;
+                overflow: hidden;
+            }
+            .card-header{
+                padding: 1rem;
+                display: none;
+            }
+            .card h3{
+                margin-bottom: .5rem;
+            }
+            .card .designation{
+                margin-bottom: .5rem
+            }
+            .card .details{
+                    padding: 1rem;
+            }
+            @media (min-width: 575px){
+                .card .details h3{
+                    display: none;
+                }
+                .card .details .designation{
+                    display: none;
+                }
+                .card .card-header{display: block;}
+                .card .details{
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    width: 100%;
+                    padding: 1rem;
+                    background: #0000ee78;
+                    color: #fff;
+                    height: 100%;
+                    transition: .4s all;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <div class="image-wrapper">                
+                <img
+                    src="./assets/images/evie_default_bg.jpg"
+                    class="card-image"
+                    alt="laptop at a desk"
+                />
+                <div class="details">
+                    <h3>John Doe</h3>
+                    <p class="designation">Web Designer</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni fugiat voluptas hic veritatis consequuntur vero officia numquam itaque vitae dolorum!</p>
+                </div>
+            </div>
+            <div class="card-header">
+                <h3>John Doe</h3>
+                <p>Web Designer</p>
+            </div>
+            
+        </div>
+    </body>
+</html>

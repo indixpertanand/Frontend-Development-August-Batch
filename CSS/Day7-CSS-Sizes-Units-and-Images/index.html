@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizes</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-size: 1rem;
+        }
+        html{
+            font-size: 20px;
+        }
+        body{
+            margin: 0;
+        }
+        .box, .box-2{
+            height: 100px;
+            width: 100px;
+            padding: 20px;
+            background-color: #000;
+        }
+        .w-auto{
+            width: auto;
+        }
+        .w-min-content{
+            width: min-content;
+        }
+        .w-max-content{
+            width: max-content;
+        }
+        .w-fit-content{
+            width: fit-content;
+        }
+
+        .box-2{
+            width: 100%;
+            /* height: auto; */
+            /* aspect-ratio: 16/9; */
+            height: 100vh;
+            background: #e5e5e5
+        }
+        section{
+            width: 50%;
+            font-size: 20px;
+            padding-bottom: 100px;
+        }
+        section .box-2{
+            font-size: 24px;
+            height: 100vh;
+        }
+        section p{            
+            font-size: 1em;
+            /* padding: .5em; */
+            padding: .5rem;
+        }
+        section{
+            width:100%;
+        }
+        section img{
+            width: 400px;
+
+        }
+        .img-responsive{
+            max-width: 100%;
+            height: auto;
+        }
+        .img-rounded{
+            border-radius: 10px;
+        }
+        .img-circle{
+            width: 250px;
+            aspect-ratio: 1/1;
+            border-radius: 100%;
+        }
+        .img-thumbnail{
+            width: 250px;
+            aspect-ratio: 1/1;
+            border: 1px solid #aaa;
+            padding: 4px;
+            background-color: #fff;
+            border-radius: 4px;
+            object-fit: cover;
+            object-position: 80%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>CSS Sizes</h1>
+        <div class="box">
+            
+        </div>
+        <div class="w-auto">
+            Auto width Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        </div>
+        <div class="w-min-content">
+           Min Content Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        </div>
+        <!-- <div class="w-max-content">
+           Max Content Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis quidem aspernatur? Doloremque rem excepturi mollitia enim recusandae obcaecati sit amet. Voluptas molestias ratione eius perspiciatis hic placeat, facilis dolore!
+        </div> -->
+        <div class="w-fit-content">
+           Fit Content Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis quidem aspernatur? Doloremque rem excepturi mollitia enim recusandae obcaecati sit amet. Voluptas molestias ratione eius perspiciatis hic placeat, facilis dolore!
+        </div>
+        <section>
+            <h2>Relative Units</h2>
+            <div class="box-2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi doloribus quos quasi similique. Reiciendis ut cumque non vitae beatae commodi!</p>
+                
+            </div>
+            Lorem ipsum dolor sit amet.
+        </section>
+        <section>
+            <h2>Styling Image</h2>
+            <!-- resposive image -->
+             <img src="./thumb.webp" class="img-responsive" alt="">
+             <img src="./thumb.webp" class="img-rounded" alt="">
+             <img src="./thumb.webp" class="img-circle" alt="">
+             <img src="./thumb.webp" class="img-thumbnail" alt="">
+        </section>
+    </main>
+</body>
+</html>
