@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS List, Position & Overflow</title>
+    <style>
+
+        ul{
+            list-style-type: square;
+        }
+        ol{
+            list-style-type: upper-latin;
+        }
+        .list-image{
+            list-style-image: url('./images/arrow-head.png');
+            list-style-position: inside;
+            padding-left: 0;
+        }
+        .list-unstyled, .custom-list{
+            list-style: none;
+            padding-left: 0;
+        }
+        .custom-list li::before{
+            content: '✨';
+            margin-right: .5rem;
+        }
+        .custom-list li{
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h2>Styling List</h2>
+        <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, odio.</li>
+            <li>Consequuntur officiis voluptates possimus est error quaerat, ut tempore distinctio!</li>
+            <li>Cupiditate doloremque facilis laborum repellendus sunt iure earum modi quam.</li>
+            <li>Laudantium eius quod consectetur ea nihil ab totam eligendi saepe.</li>
+            <li>Blanditiis eaque alias eveniet nemo vel corporis, eius minus quibusdam.</li>
+            <li>Quis quam quia deleniti vitae magni minus vero quaerat numquam!</li>
+        </ul>
+        <ol>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, illo!</li>
+            <li>Facere ducimus hic, officiis doloremque cumque assumenda culpa omnis eligendi.</li>
+            <li>Tenetur quas iste eligendi atque id, laudantium culpa recusandae distinctio?</li>
+            <li>Dolorem, ex! Perferendis tempore a sint id soluta. Beatae, quidem!</li>
+            <li>Adipisci molestiae veritatis, aliquid error delectus omnis. Iusto, odio sed.</li>
+            <li>Obcaecati ipsa accusantium commodi error vel incidunt architecto ut deserunt.</li>
+        </ol>
+
+        <ul class="list-image">
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, pariatur.</li>
+            <li>Ipsa fuga id velit eveniet, rerum sapiente a asperiores facere.</li>
+            <li>Impedit libero facere possimus maxime vitae dolorum vero eius facilis!</li>
+            <li>Magni quis dolore commodi nam sunt facere velit. Optio, excepturi?</li>
+        </ul>
+        <ul class="list-unstyled">
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, pariatur.</li>
+            <li>Ipsa fuga id velit eveniet, rerum sapiente a asperiores facere.</li>
+            <li>Impedit libero facere possimus maxime vitae dolorum vero eius facilis!</li>
+            <li>Magni quis dolore commodi nam sunt facere velit. Optio, excepturi?</li>
+        </ul>
+        <ul class="custom-list">
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, pariatur.</li>
+            <li>Ipsa fuga id velit eveniet, rerum sapiente a asperiores facere.</li>
+            <li>Impedit libero facere possimus maxime vitae dolorum vero eius facilis!</li>
+            <li>Magni quis dolore commodi nam sunt facere velit. Optio, excepturi?</li>
+        </ul>
+
+    </main>
+</body>
+</html>
