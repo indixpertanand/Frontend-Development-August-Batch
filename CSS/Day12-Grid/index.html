@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        /* .grid-container{
+            display: grid;
+            grid-template-columns: 100px 250px 100px;
+            grid-template-rows: 50px 100px 50px;
+            gap: 20px;
+        } */
+
+        .bg-blue{
+            background: #00fa;
+            color: #fff;
+        }
+        .bg-red{
+            background: #f00a;
+            color: #fff;
+        }
+        .bg-yellow{
+            background: #ff0;
+            color: #000;
+        }
+        .bg-green{
+            background: #0f0;
+            color: #fff;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-rows: 50px 100px 50px;
+            gap: 20px;
+            /* justify-items: center;
+            align-items: center; */
+        }
+        
+
+        .grid-container .grid-items:first-child{
+            grid-column: 1/ span 2;
+            grid-row: 1/ span 2;
+        }
+        .grid-container .grid-items:last-child{
+            grid-column: 2/ span 2;
+            grid-row: 2/ span 2;
+        }
+        .grid-container-2{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+        .grid-container-3{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto auto;
+            grid-template-areas: 
+                "header header header"
+                "sidebar main main";
+        }
+        .grid-container-3 .grid-items:first-child{
+            grid-area: header;
+        }
+        .grid-container-3 .grid-items:nth-child(2){
+            grid-area: sidebar;
+        }
+        .grid-container-3 .grid-items:last-child{
+            grid-area: main;
+        }
+        .card{
+            max-width: 300px;
+            display: grid;
+            
+        }
+        .card>*{
+            grid-area: 1/1;
+        }
+        .card-body{
+            padding: 20px;
+            background: rgba(0,0,0,.5);
+            color: #fff;
+        }
+        .card img{
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="grid-container">
+            <div class="grid-items bg-blue">Item 1</div>
+            <span class="grid-items bg-red">Item 2</span>
+            <!-- <div class="grid-items  bg-yellow">Item 3</div>
+            <div class="grid-items bg-green">Item 4</div> -->
+        </div>
+        <h2>Repeating Items</h2>
+        <div class="grid-container-2">
+            <div class="grid-items bg-blue">Item 1</div>
+            <span class="grid-items bg-red">Item 2</span>
+            <div class="grid-items  bg-yellow">Item 3</div>
+            <div class="grid-items bg-green">Item 4</div>
+        </div>
+        <h2>Grid Area</h2>
+        <div class="grid-container-3">
+            <div class="grid-items bg-blue">Item 1</div>
+            <span class="grid-items bg-red">Item 2<br/><ul>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Maiores, minus voluptates!</li>
+                <li>Suscipit, enim illo!</li>
+                <li>Illo, nemo dolorum?</li>
+            </ul></span>
+            <div class="grid-items  bg-yellow">Item 3
+                <ul>
+                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, facilis.</li>
+                    <li>Odio, illum commodi! Dicta ad omnis illum eveniet aliquid atque!</li>
+                    <li>Nihil aut sunt cum pariatur magni sed nesciunt vero dicta.</li>
+                    <li>Fugiat reiciendis consectetur eligendi sed neque atque nulla, vel incidunt?</li>
+                    <li>Cumque blanditiis optio earum ipsa perferendis ducimus repudiandae quibusdam modi!</li>
+                </ul>
+            </div>
+        </div><br/>
+        <div class="card">
+            <img src="./evie_default_bg.jpeg" alt="sample img">
+            <div class="card-body">
+                <h5>heading</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, dignissimos quo maxime debitis optio fuga? Culpa quod molestiae facere iste!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat animi quos laboriosam culpa? Vero, veritatis animi, consectetur, iste facere delectus minima voluptate similique libero sunt nisi et ratione sed non!
+                </p>
+            </div>
+        </div>  
+    </main>
+</body>
+</html>

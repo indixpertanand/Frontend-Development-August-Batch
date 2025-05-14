@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Task</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .flexbox{
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #4239c6;
+            padding: 10px;
+            max-width: 600px;
+            margin-inline: auto;
+        }
+        .flex-item{
+            padding: .5rem 1rem;
+            background: #685ef6;
+            color: #fff;
+            border-radius: .3em;
+        }
+        .flexbox-2{
+            /* width: 500px; */
+            column-gap: .1rem;
+        }
+        .flexbox-2 .flex-item{
+            width: 30%;
+            flex-grow: 1;
+        }
+        h1, h2{text-align: center;}
+        .flexbox-3{
+            height: 400px;
+            justify-content: center;
+            align-items: center;
+        }
+        .flexbox-3 .flex-item{
+            width: 200px;
+            border-radius: 0;
+        }
+        .flexbox-4{
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            max-width: 430px;
+        }
+        .flexbox-4 .flex-item{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Task 1</h1>
+        <div class="flexbox">
+            <div class="flex-item">Home</div>
+            <div class="flex-item">About Us</div>
+            <div class="flex-item">Our Products</div>
+            <div class="flex-item">Contact Us</div>
+        </div>
+        <h2>Task 2</h2>
+        <div class="flexbox flexbox-2">
+            <div class="flex-item">I am small</div>
+            <div class="flex-item">Ive more content than very small item</div>
+            <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dolor blanditiis omnis pariatur officia ipsam corporis odio harum vitae. Deleniti similique possimus voluptates provident eum ex repellendus incidunt qui necessitatibus!</div>
+        </div>
+        <h2>Task 3</h2>
+        <div class="flexbox flexbox-3">
+            <div class="flex-item">Center me</div>
+        </div>
+        <h2>Task 4</h2>
+        <div class="flexbox flexbox-4">
+            <div class="flex-item">Turnip</div>
+            <div class="flex-item">Greens</div>
+            <div class="flex-item">Yerrow</div>
+            <div class="flex-item">Ricebeen</div>
+            <div class="flex-item">Rutabaga</div>
+            <div class="flex-item">endive</div>
+            <div class="flex-item">Cauliflower</div>
+            <div class="flex-item">Sea Lettuce</div>
+            <div class="flex-item">Kohlrobi</div>
+            <div class="flex-item">amaranath</div>
+        </div>
+    </main>
+</body>
+</html>

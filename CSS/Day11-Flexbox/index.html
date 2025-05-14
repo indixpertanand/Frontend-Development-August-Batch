@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .flex-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: stretch;
+            align-items: center;
+            /* gap: 2rem 1rem; */
+            column-gap: 1rem;
+            row-gap: 2rem;
+        }
+        .box{
+            width: 200px;
+            height: 100px;
+            border: 1px solid #a0a0a0;
+        }
+        .box-1{
+            width: 100px;            
+            border: 1px solid red;
+        }
+        .flex-container > div{
+            flex-grow: 1;
+        }
+        .flex-container > div{
+            flex-shrink: 0;
+        }
+        .flex-container > div:first-child{
+            order: 8;
+        }
+        .flex-container > div:nth-child(2){
+            order: 2;
+        }
+        .flex-container > div:nth-child(3){
+            order: 1;
+        }
+        .flex-container > div:nth-child(4){
+            order: 5;
+        }
+        .flex-container > div:nth-child(5){
+            order: 4;
+        }
+        .flex-container > div:nth-child(6){
+            order: 3;
+        }
+        .flex-container > div:nth-child(7){
+            order: 6;
+        }
+        .flex-container > div:nth-child(8){
+            order: 7;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Flexbox</h1>
+        <div class="flex-container">
+            <div class="box-1">Item 1</div>
+            <div class="box">Item 2</div>
+            <div class="box">Item 3</div>
+            <div class="box">Item 4</div>
+            <div class="box-1">Item 5</div>
+            <div class="box">Item 6</div>
+            <div class="box">Item 7</div>
+            <div class="box">Item 8</div>
+        </div>
+    </main>
+</body>
+</html>
