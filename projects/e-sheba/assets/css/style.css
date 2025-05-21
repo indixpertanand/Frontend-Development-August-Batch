@@ -47,16 +47,16 @@ body{
     }
     :root{
         --border-radius: 15px;
-
         --font-1: 54px;
         --font-2: 42px;
         --font-3: 32px;
         --font-4: 20px;
         --font-5: 18px;
         --font-6: 16px;
-        --font-7: 12px; 
+        --font-7: 12px;
     }
 }
+
 
 @media (max-width: 1199.98px){
     .container{
@@ -64,6 +64,13 @@ body{
     }
     :root{
         --border-radius: 10px;
+        --font-1: 46px;
+        --font-2: 34px;
+        --font-3: 24px;
+        --font-4: 18px;
+        --font-5: 16px;
+        --font-6: 14px;
+        --font-7: 12px;
     }
 }
 @media (max-width: 991.98px){
@@ -89,6 +96,12 @@ body{
 .flex-grow{
     flex-grow: 1
 }
+.flex-shrink-0{
+    flex-shrink: 0
+}
+.flex-column{
+    flex-direction: column;
+}
 .flex-wrap{
     flex-wrap: wrap;
 }
@@ -104,6 +117,20 @@ body{
 .align-items-center{
     align-items: center;
 }
+
+@media (min-width: 575px){
+    .flex-sm-row{
+        flex-direction: row;
+    }
+}
+@media (min-width: 992px){
+    .flex-lg-row{
+        flex-direction: row;
+    }
+}
+
+
+
 
 button{
     border-color: transparent;
@@ -149,7 +176,11 @@ a{
     .btn{
         padding: .4em 1.4em .46em;
     }
+    .btn-circle{
+        padding: 0;
+    }
 }
+
 
 
 .bg-primary{
@@ -161,15 +192,51 @@ a{
     color: var(--body-color);
 }
 
+/* Images */
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.invert-white{
+    filter: brightness(0) invert(1);
+}
+
+/* Typography */
+
 :where(h1, h2, h3, h4):not(:last-child){
     margin-bottom: 1.5rem;
 }
 :where(h5, h6, p, ul):not(:last-child){
     margin-bottom: 1rem;
 }
+h1, .h1, h2, .h2, h3, .h3, h4, .h4{
+    font-weight: bold;
+    font-family: var(--font-family-heading);
+}
+h1, .h1{
+    font-size: var(--font-1);
+}
+h2, .h2{
+    font-size: var(--font-2);
+}
+h3, .h3{
+    font-size: var(--font-3);
+}
+h4, .h4{
+    font-size: var(--font-4);
+}
 
-
-
+.fw-med{
+    font-weight: 500;
+}
+.fw-semi{
+    font-weight: 600;
+}
+.fw-bold{
+    font-weight: 700;
+}
 
 /* Header CSS */
 
@@ -226,7 +293,6 @@ header{
         display: none;
     } 
 }
-
 
 
 /* Footer CSS */
@@ -306,3 +372,8 @@ footer .social-icons a{
         width: 100%;
     }
 }
+
+/* Mask group */
+
+
+
